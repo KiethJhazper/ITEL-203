@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Kanit", sans-serif;
+                color:black ;
+                background: url('./360_F_469687073_YZxpOJrNFDnjdym5oxBQCBxfGXI4Bzbz.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            form{
+                padding-top: 70px;
+                padding-bottom: 40px;
+                padding-left: 60px;
+                padding-right: 60px;
+                border-radius: 20px;
+                background-color: beige;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        
+        <form method="get" enctype="application/x-www-form-urlencoded" action="/action_page.php">
+            <h2 style="text-align: center; margin-top: -30px;">Registration Form</h2>
+            <fieldset>
+                <legend><b>Information</b></legend>
+                <table>
+                    <tr>
+                        <td for="firstsname">First Name:</td>
+                        <td><input type = "text" id = "firstname" name = "firstname" required/></td>
+                    </tr>
+                    <tr>
+                        <td for = "middlename">Middle Name:</td>
+                        <td><input type = "text" id = "middlename" name = "middlename" required/></td>
+                    </tr>
+                    <tr>
+                        <td for = "lastname">Last Name:</td>
+                        <td><input type = "text" id = "lastname" name = "lastname" required/></td>
+                    </tr>
+                    <tr>
+                        <td for = "gender">Gender:</td>
+                        <td>
+                            <input type = "radio" name = "gender" required>Male
+                            <input type = "radio" name = "gender" required>Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td for = "email">Email:</td>
+                        <td><input type = "email" name = "email_address" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td>
+                            <select>
+                                <option>+61</option>
+                                <option>+55</option>
+                                <option>+855</option>
+                                <option>+1</option>
+                                <option>+63</option>
+                            </select>
+                            <input type="Phone" placeholder="98480*****" name = " ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input  type = "text" placeholder="mm/dd/yyyy" name = ""></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <tr>
+                    <td>Level:</td>
+                    <td>
+                        <select>
+                            <option>Elementary</option>
+                            <option>High School</option>
+                            <option>Senior High</option>
+                            <option>College</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>School:</td>
+                    <td><input type = "text" name = " "></td>
+                </tr>
+            </fieldset>
+            
+            <br><br><input type="submit" style="margin-left: 43%;" ></input><br>
+            <input type="reset" value="Clear Form" style = "margin-left: 40%;"></input> 
+        </form>
+    </body>
+</html>
